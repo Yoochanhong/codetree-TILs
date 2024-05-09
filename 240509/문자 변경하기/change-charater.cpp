@@ -3,6 +3,6 @@
 int main() {
     char a = 'C';
     a = 'T';
-    cout << a;
+    std::cout << a;
     return 0;
 }
