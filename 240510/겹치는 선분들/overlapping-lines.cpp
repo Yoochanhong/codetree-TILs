@@ -9,19 +9,21 @@ int main() {
     char b;
     vector<pair<int, int>> l;
     cin >> n >> k;
-    for (int i = 0, a; i < n; i++){
+    for (int i = 0, a; i < n; i++) {
         cin >> a >> b;
-        if (b == 'L'){
+        if (b == 'L') {
             l.emplace_back(c - a, 1);
             l.emplace_back(c, -1);
+            c -= a;
         } else {
             l.emplace_back(c, 1);
-            l.emplace_back(c + 1, -1);
+            l.emplace_back(c + a, -1);
+            c += a;
         }
     }
     sort(l.begin(), l.end());
-    int r=0,s=0;
-    for (auto [v, w] :l){
+    int r = 0, s = 0;
+    for (auto [v, w]: l) {
         r += w;
         if (r >= k) s++;
     }
