@@ -3,7 +3,7 @@
 int main() {
     int a, b, c[1001] = {};
     std::cin >> a >> b;
-    while(a){
+    while(a > 1){
         c[a % b]++;
         a /= b;
     }
