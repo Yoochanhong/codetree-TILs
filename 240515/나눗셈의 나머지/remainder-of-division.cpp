@@ -8,7 +8,7 @@ int main() {
         a /= b;
     }
     int s = 0;
-    for (int i = 0; i <= 1000; i++){
+    for (int i = 0; i < b; i++){
         if (!c[i]) continue;
         s += 1 * c[i] * c[i];
     }
