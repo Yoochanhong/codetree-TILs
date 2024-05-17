@@ -8,7 +8,7 @@ int main() {
     int c = 0;
     string d = a;
     while (d != b) {
-        if (c > a.length()) {
+        if (c >= a.length()) {
             c = -1;
             break;
         }
