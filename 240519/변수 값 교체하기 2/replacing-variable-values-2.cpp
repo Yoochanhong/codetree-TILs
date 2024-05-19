@@ -2,7 +2,7 @@
 
 int main() {
     int a = 5, b = 3;
-    b = a;
+    a = b;
     std::cout<< a << "\n" << b;
     return 0;
 }
