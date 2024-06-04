@@ -3,7 +3,7 @@
 int main() {
     int n, m;
     std::cin >> n >> m;
-    for (int i = n; i <= 8; i += 2) {
+    for (int i = 2; i <= 8; i += 2) {
         for (int j = m; j >= n; j--) {
             std::cout << j << " * " << i << " = " << i * j;
             if (j > n) std::cout << " / ";
