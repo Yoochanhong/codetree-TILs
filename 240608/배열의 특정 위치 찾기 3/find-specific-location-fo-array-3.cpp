@@ -1,13 +1,13 @@
 #include <iostream>
 
 int main() {
-    for (int i = 0, a, s = 0; i < 100; i++) {
-        std::cin >> a;
-        if (!a) {
-            std::cout << s;
+    int a[101];
+    for (int i = 0; i < 100; i++) {
+        std::cin >> a[i];
+        if (!a[i]) {
+            std::cout << a[i - 1] + a[i - 2] + a[i - 3];
             break;
         }
-        s += a;
     }
     return 0;
 }
