@@ -8,7 +8,7 @@ int main() {
             std::cout << i;
             break;
         }
-        if (s[i] == 48) std::cout << "None";
+        if (s[i] == ' ') std::cout << "None";
     }
     return 0;
 }
