@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    int n, m, r[10][10];
+    int n, m, r[10][10] = {};
     std::cin >> n >> m;
     for (int i = 0; i < m; i++) {
         int a, b;
