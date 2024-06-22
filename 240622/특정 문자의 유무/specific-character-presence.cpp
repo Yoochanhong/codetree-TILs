@@ -6,7 +6,7 @@ int main() {
     char a[21];
     cin >> a;
     auto b = strstr(a, "ee");
-    auto c = strstr(a, "eb");
+    auto c = strstr(a, "ab");
 
     cout << (b == nullptr ? "No" : "Yes") << " ";
     cout << (c == nullptr ? "No" : "Yes");
